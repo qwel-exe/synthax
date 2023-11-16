@@ -52,21 +52,6 @@ document.querySelectorAll("#hacked").forEach((h1Element) => {
   });
 });
 
-// Get the navbar element
-var navbar = document.querySelector(".navbar");
-
-// Listen for the scroll event
-window.addEventListener("scroll", function () {
-  // Check if the page has been scrolled down
-  if (window.scrollY > 0) {
-    // If scrolled down, change the background color
-    navbar.style.backgroundColor = "black"; // Replace 'your_desired_color' with the color you want
-  } else {
-    // If at the top, revert to the original background color
-    navbar.style.backgroundColor = "transparent"; // Or any other initial color
-  }
-});
-
 
 //main.js file
 

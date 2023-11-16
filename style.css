@@ -1,4 +1,8 @@
-body{background:black;}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{background:black;
+  font-family: 'Poppins', sans-serif;}
+
 section {
   height: 100vh;
 }
@@ -12,13 +16,15 @@ section {
 
 h1, h2, h3, p {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
+
 
 
 /* navigation */
   
-  .navbar {
-    background-color: transparent;/* Adjust the alpha value as needed for transparency */
+.navbar {
+    background-color: black;/* Adjust the alpha value as needed for transparency */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,16 +55,17 @@ h1, h2, h3, p {
   }
   .navbar a.button,
   a::after {
-    font-family: 'Kdam Thmor Pro';
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(2,255,10,1) 6%, rgba(41,255,2,1) 46%, rgba(0,255,25,1) 100%);
+    background: linear-gradient(135deg, #7b68ee 100%, transparent 5%);
     border-radius: 5px;
     border: 0;
     color: #101916;
+    letter-spacing: 1.8px;
+    line-height: 1.25em;
     position: relative;
     text-transform: uppercase;
   }
@@ -145,58 +152,75 @@ h1, h2, h3, p {
   }
   
 
-.a {
-  background: url("https://s6.gifyu.com/images/S8jUM.gif") no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
-}
-
 /* Hero section styles */
+.a {
+    background: url("https://s6.gifyu.com/images/S8jUM.gif") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+  }
+
 .hero {
-  display: flex;
-  justify-content: center; /* Horizontally align the content */
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  text-align: center; /* Optionally, center text within .hero */
+    display: flex;
+    justify-content: center; /* Horizontally align the content */
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center; /* Optionally, center text within .hero */
+    margin-top: -80px; /* Adjust the top margin as needed */
 }
 
 .hero h1 {
-  font-size: 10rem; /* Replace with your desired fixed font size */
-  color: white;
-  padding: 0.5rem 2rem; /* Replace with your desired fixed padding values */
-  border-radius: 1rem; /* Replace with your desired fixed border radius */
-  margin: 0;
-  transition: background-color 0.3s, color 0.3s;
+    font-size: 11rem; /* Replace with your desired fixed font size */
+    color: white;
+    padding: 0.5rem 2rem; /* Replace with your desired fixed padding values */
+    border-radius: 1rem; /* Replace with your desired fixed border radius */
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .hero h1:hover {
-  background-color: white;
-  color: black;
+    background-color: white;
+    color: black;
 }
 
-/* Centered image styles */
 .centered-image {
-  max-width: 500px;
-  height: auto;
-  margin: -100px -120px 0;
+    max-width: 350px;
+    height: auto;
+    margin: -10px -110px 0;
 }
+
+
+.hackathon-text {
+    font-size: 3.5rem;
+    color: white;
+    white-space: nowrap; /* Add this line to prevent text from wrapping */
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .container {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
   padding: 20px;
   margin-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .card {
   flex: 1;
   width: 100%;
-  max-width: 240px;
-  max-height: 130px;
+  max-width: 280px;
+  max-height: 200px;
   position: relative;
   background-color: rgb(16 16 16);
   border: 1px solid rgb(255 255 255 / 5%);
@@ -238,6 +262,7 @@ h1, h2, h3, p {
   border-radius: 1.25rem;
   color: white;
   height: 100%;
+
 }
 
 .card-content > :is(h1, h3, p) {
@@ -261,15 +286,6 @@ h1, h2, h3, p {
 }
 
 
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    padding: 20px;
-  }
   
   .about-section {
     text-align: center;
@@ -287,12 +303,10 @@ h1, h2, h3, p {
   }
 
 
-.faq-heading {
-   margin-bottom: 20px;
-    padding: 20px 0;
+  .faq-heading {
+    color: white;
+    text-align: center;
     font-size: 4rem;
-    color: white; /* White color for FAQ heading */
-    text-align: center; /* Center the heading */
   }
   
   .faq-container {
@@ -301,33 +315,32 @@ h1, h2, h3, p {
     flex-direction: column;
   }
   
-  /* Style the hr line */
   .hr-line {
     width: 60%;
     margin: auto;
     border: none;
-    border-top: 1px solid #777; /* Border color for the line */
+    border-top: 1px solid #777;
   }
   
-  /* Style the buttons that are used to open and close the faq-page body */
   .faq-page {
-    color: white; /* Set text color to white */
+    color: white;
     cursor: pointer;
-    padding: 30px 20px;
+    padding: 15px 20px;
     width: 60%;
     border: none;
     outline: none;
     margin: auto;
+    font-size: 25px; /* Adjusted font size */
   }
   
   .faq-body {
     margin: auto;
-    width: 60%; /* Set the same width as the FAQ header */
-    padding: 30px 20px; /* Match the padding of the FAQ header */
+    width: 60%;
+    padding: 20px;
     color: white;
+    font-size: 12px;
   }
   
-  /* Style the faq-page panel. Note: hidden by default */
   .faq-body {
     padding: 0 18px;
     display: none;
@@ -335,85 +348,181 @@ h1, h2, h3, p {
   }
   
   .faq-page:after {
-    content: "\02795"; /* Unicode character for "plus" sign (+) */
+    content: "\02795";
     font-size: 13px;
+    color: #777;
     float: right;
     margin-left: 5px;
   }
   
   .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796";
   }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {    /* Hide links */
+    .navbar a {
+      display: none;
+    }
+  
+    /* Show only button and logo */
+    .navbar a.logo,
+    .navbar a.button {
+      display: block;
+    }
+  
+    /* Optionally, you can style the button and logo for smaller screens if needed */
+    .navbar a.logo {
+      font-size: 25px; /* Adjust as needed */
+      font-weight: bold;
+    }
+  
+    .navbar a.button {
+      font-size: 20px; /* Adjust as needed */
+      padding: 8px 12px; /* Adjust as needed */
+    }
   
 
-  
-/* Media Query for Responsive Design */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 8rem; /* Adjust the font size for smaller screens */
-    padding: 0.5rem 4rem; /* Adjust the padding for smaller screens */
-  }
-
-  .centered-image {
-    max-width: 350px; /* Adjust the max-width of the image for smaller screens */
-  }
-  .center-links {
-    display: none;
-  }
-
-  .card {
-    width: calc(100% - 1rem);
-    margin: 0 1rem;
-    padding: 0.75rem;
-    border-radius: 1rem;
-  }
-
-  .about-section h1 {
-    font-size: 5rem;
-  }
-  .about-text{
-    font-size:1rem;
-  }
-    .container{
-    margin-bottom: 250px;
-  }
-  .faq-container{
-    margin-top:250px;
-  }
 }
 
-/* Media Query for Even Smaller Screens (e.g., mobile phones) */
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 4rem;
-    padding: 0.5rem 5rem;
-  }
 
-  .centered-image {
-    max-width: 250px;
+    
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+      font-size: 6rem; /* Adjust the font size for smaller screens */
+      padding: 0.5rem 4rem; /* Adjust the padding for smaller screens */
+    }
+  
+    .centered-image {
+      max-width: 350px; /* Adjust the max-width of the image for smaller screens */
+    }
+    
+    .hackathon-text {
+        font-size: 2.2rem; /* Adjust as needed */
+        bottom: 20px; /* Adjust as needed */
+  
   }
-
-  .about-section h1 {
-    font-size: 1.5rem; /* Adjust the font size for the about section heading */
-  }
-
-  .card-content {
-    padding: 1.5rem;
-  }
-
+  
   .card-content > h1 {
     font-size: 1rem;
   }
-  .about-section h1 {
+  .about-section,.faq-heading h1 {
     font-size: 3rem;
   }
-  .about-text{
-    font-size: 1rem;
+  .about-text,
+  .faq-body {
+    font-size: 1rem; /* Adjust the font size for text on smaller screens */
   }
-  .container{
-    margin-bottom: 450px;
+
+  .faq-page {
+    width: 100%; /* Adjust the width for FAQ pages on smaller screens */
   }
-  .faq-container{
-    margin-top:450px;
+
+  .faq-container,
+  .card-container {
+    width: 100%; /* Adjust the width for container elements on smaller screens */
   }
-}
+
+  .hr-line {
+    width: 100%; /* Adjust the width for horizontal lines on smaller screens */
+  }
+  
+  }
+  .faq-container {
+    margin-bottom: 40px;
+  }
+  
+  /* Adjust the font size for both headings to prevent overlap */
+  .about-section h1,
+  .faq-heading {
+    font-size: 2rem;
+  }
+  
+  /* Media Query for Even Smaller Screens (e.g., mobile phones) */
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 4rem;
+      padding: 0.5rem 5rem;
+    }
+  
+    .centered-image {
+      max-width: 150px;
+    }
+    .hackathon-text{
+        font-size: 1.2rem;
+        bottom: 100px;
+    }
+  
+  
+    .card {
+      max-width: 100%; /* Make cards take up the full width on smaller screens */
+      max-height: none; /* Allow cards to adjust height based on content */
+    }
+  
+    .card-content {
+      padding: 1.5rem;
+    }
+  
+    .faq-page {
+      width: 100%; /* Adjust the width for FAQ pages on smaller screens */
+    }
+    .about-section h1,
+    .faq-heading {
+      font-size: 1.2rem; /* Adjust the font size for smaller screens */
+    }
+  
+    .faq-container {
+      margin-bottom: 20px; /* Adjust the margin for the FAQ container */
+    }
+  
+    .faq-page {
+      font-size: 18px; /* Adjust the font size for FAQ pages on smaller screens */
+      width: 90%; /* Adjust the width for FAQ pages on smaller screens */
+      margin: 0 auto; /* Center the FAQ pages */
+    }
+  
+    .hr-line {
+      width: 80%; /* Adjust the width for horizontal lines on smaller screens */
+      margin: 10px auto; /* Center the horizontal lines */
+    }
+  
+    /* Add this style to limit the width of the container */
+    .container {
+      max-width: 100%; /* Adjust the max-width for the container */
+    }
+  
+  }
+  
+  @media (max-width: 320px) {
+    .hero h1 {
+      font-size: 3rem;
+      padding: 0.5rem 5rem;
+    }
+  
+    .centered-image {
+      max-width: 150px;
+    }
+    .hackathon-text{
+        font-size: .85rem;
+        bottom: 120px;
+    }
+  }
+  
