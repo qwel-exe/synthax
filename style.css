@@ -166,7 +166,7 @@ h1, h2, h3, p {
   .glitch {
     font-family: 'nt_yakione', sans-serif;
     text-transform: uppercase;
-    font-size: 10vw;
+    font-size: 11vw;
     text-align: center;
     margin: 0;
     top: 50%;
@@ -175,7 +175,6 @@ h1, h2, h3, p {
     position: absolute;
     color: #fff;
     word-wrap: nowrap;
-    width: 1000px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     white-space: nowrap;
