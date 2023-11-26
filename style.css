@@ -161,47 +161,203 @@ h1, h2, h3, p {
     z-index: -1;
   }
 
-.hero {
-    display: flex;
-    justify-content: center; /* Horizontally align the content */
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    text-align: center; /* Optionally, center text within .hero */
-    margin-top: -80px; /* Adjust the top margin as needed */
-}
 
-.hero h1 {
-    font-size: 11rem; /* Replace with your desired fixed font size */
-    color: white;
-    padding: 0.5rem 2rem; /* Replace with your desired fixed padding values */
-    border-radius: 1rem; /* Replace with your desired fixed border radius */
+
+  .glitch {
+    font-family: 'nt_yakione', sans-serif;
+    text-transform: uppercase;
+    font-size: 10vw;
+    text-align: center;
     margin: 0;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.hero h1:hover {
-    background-color: white;
-    color: black;
-}
-
-.centered-image {
-    max-width: 350px;
-    height: auto;
-    margin: -10px -110px 0;
-}
-
-
-.hackathon-text {
-    font-size: 3.5rem;
-    color: white;
-    white-space: nowrap; /* Add this line to prevent text from wrapping */
-    position: absolute;
-    bottom: 30px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-}
-
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #fff;
+    word-wrap: nowrap;
+    width: 1000px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    white-space: nowrap;
+  }
+  
+  .glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    color: #000;
+    font-family: 'nt_yakitwo';
+    transform: translateY(4%);
+    text-shadow: 1px -1px 0 #87ff65, 1px -1px 0 #87ff65, -1px 1px 0 #87ff65, 1px 1px 0 #87ff65, 2px -2px 0 #87ff65, 2px -2px 0 #87ff65, -2px 2px 0 #87ff65, 2px 2px 0 #87ff65;
+  }
+  
+  .glitch:before,
+  .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: 50px; /* Check if this value is intended */
+    background-color: #000000;
+    overflow: hidden;
+    clip: rect(auto, auto, auto, auto);
+  }
+  
+  .glitch:before {
+    left: -2px;
+    animation: noise-before 4s infinite linear alternate-reverse;
+  }
+  
+  .glitch:after {
+    left: 2px;
+    animation: noise-after 3s infinite linear alternate-reverse;
+  }
+  
+  p.subtext {
+    text-align: center;
+    margin-top: 10px; /* Adjust as needed */
+    font-size: 2.5em; /* Adjust the size relative to h1 */
+    position: absolute;
+    top: 60%; /* Adjust the percentage as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color:white;
+    text-transform: uppercase;
+  }
+  
+  @keyframes noise-before {
+     0% {
+        clip: rect(61px, 9999px, 52px, 0);
+     }
+     5% {
+        clip: rect(33px, 9999px, 144px, 0);
+     }
+     10% {
+        clip: rect(121px, 9999px, 115px, 0);
+     }
+     15% {
+        clip: rect(144px, 9999px, 162px, 0);
+     }
+     20% {
+        clip: rect(62px, 9999px, 180px, 0);
+     }
+     25% {
+        clip: rect(34px, 9999px, 42px, 0);
+     }
+     30% {
+        clip: rect(147px, 9999px, 179px, 0);
+     }
+     35% {
+        clip: rect(99px, 9999px, 63px, 0);
+     }
+     40% {
+        clip: rect(188px, 9999px, 122px, 0);
+     }
+     45% {
+        clip: rect(154px, 9999px, 14px, 0);
+     }
+     50% {
+        clip: rect(63px, 9999px, 37px, 0);
+     }
+     55% {
+        clip: rect(161px, 9999px, 147px, 0);
+     }
+     60% {
+        clip: rect(109px, 9999px, 175px, 0);
+     }
+     65% {
+        clip: rect(157px, 9999px, 88px, 0);
+     }
+     70% {
+        clip: rect(173px, 9999px, 131px, 0);
+     }
+     75% {
+        clip: rect(62px, 9999px, 70px, 0);
+     }
+     80% {
+        clip: rect(24px, 9999px, 153px, 0);
+     }
+     85% {
+        clip: rect(138px, 9999px, 40px, 0);
+     }
+     90% {
+        clip: rect(79px, 9999px, 136px, 0);
+     }
+     95% {
+        clip: rect(25px, 9999px, 34px, 0);
+     }
+     100% {
+        clip: rect(173px, 9999px, 166px, 0);
+     }
+  }
+  
+  @keyframes noise-after {
+     0% {
+        clip: rect(26px, 9999px, 33px, 0);
+     }
+     5% {
+        clip: rect(140px, 9999px, 198px, 0);
+     }
+     10% {
+        clip: rect(184px, 9999px, 89px, 0);
+     }
+     15% {
+        clip: rect(121px, 9999px, 6px, 0);
+     }
+     20% {
+        clip: rect(181px, 9999px, 99px, 0);
+     }
+     25% {
+        clip: rect(154px, 9999px, 133px, 0);
+     }
+     30% {
+        clip: rect(134px, 9999px, 169px, 0);
+     }
+     35% {
+        clip: rect(26px, 9999px, 187px, 0);
+     }
+     40% {
+        clip: rect(147px, 9999px, 137px, 0);
+     }
+     45% {
+        clip: rect(31px, 9999px, 52px, 0);
+     }
+     50% {
+        clip: rect(191px, 9999px, 109px, 0);
+     }
+     55% {
+        clip: rect(74px, 9999px, 54px, 0);
+     }
+     60% {
+        clip: rect(145px, 9999px, 75px, 0);
+     }
+     65% {
+        clip: rect(153px, 9999px, 198px, 0);
+     }
+     70% {
+        clip: rect(99px, 9999px, 136px, 0);
+     }
+     75% {
+        clip: rect(118px, 9999px, 192px, 0);
+     }
+     80% {
+        clip: rect(1px, 9999px, 83px, 0);
+     }
+     85% {
+        clip: rect(145px, 9999px, 98px, 0);
+     }
+     90% {
+        clip: rect(121px, 9999px, 154px, 0);
+     }
+     95% {
+        clip: rect(156px, 9999px, 44px, 0);
+     }
+     100% {
+        clip: rect(67px, 9999px, 122px, 0);
+     }
+  }
 
 .container {
   display: flex;
