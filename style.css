@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body{background:black;
+  color: #fff;
   font-family: 'Poppins', sans-serif;}
 
 section {
@@ -169,7 +170,7 @@ h1, h2, h3, p {
     font-size: 11vw;
     text-align: center;
     margin: 0;
-    top: 50%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -666,3 +667,46 @@ h1, h2, h3, p {
     }
   }
   
+  h2::before {
+    content: none;
+ }
+ h2 {
+  position: absolute;
+  top: 53%; /* Adjust the distance from glitched text as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+ ul#countdown {
+  position: absolute;
+  top: 64%; /* Adjust the distance from glitched text as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 15px 0 20px 0;
+  border: 1px solid #adafb2;
+  border-width: 1px 0;
+  overflow: hidden;
+  font-weight: bold;
+  list-style-type: none;
+  text-align: center;
+}
+
+ul#countdown li {
+  margin: 0 -3px 0 0;
+  padding: 0;
+  display: inline-block;
+  width: 15.5%; /* Adjust as needed */
+  font-size: 6vw;
+  text-align: center;
+}
+
+ul#countdown li .label {
+  color: #adafb2;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+}
