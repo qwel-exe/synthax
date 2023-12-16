@@ -4,9 +4,6 @@ body{background:black;
   color: #fff;
   font-family: 'Poppins', sans-serif;}
 
-section {
-  height: 100vh;
-}
 :root {
   --primary-color: mediumslateblue;
 }
@@ -359,12 +356,57 @@ h1, h2, h3, p {
      }
   }
 
+
+  h2::before {
+    content: none;
+ }
+ .glitch-wrapper h2 {
+  position: absolute;
+  top: 53%; /* Adjust the distance from glitched text as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+ ul#countdown {
+  position: absolute;
+  top: 64%; /* Adjust the distance from glitched text as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 15px 0 20px 0;
+  border: 1px solid #adafb2;
+  border-width: 1px 0;
+  overflow: hidden;
+  font-weight: bold;
+  list-style-type: none;
+  text-align: center;
+}
+
+ul#countdown li {
+  margin: 0 -3px 0 0;
+  padding: 0;
+  display: inline-block;
+  width: 15.5%; /* Adjust as needed */
+  font-size: 6vw;
+  text-align: center;
+}
+
+ul#countdown li .label {
+  color: #adafb2;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+}
+
+
 .container {
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
   padding: 20px;
-  margin-bottom: 20px;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -447,7 +489,7 @@ h1, h2, h3, p {
     color: white;
   }
   
-  .about-section h1 {
+  h1 {
     font-size: 4rem;
   }
   
@@ -461,7 +503,6 @@ h1, h2, h3, p {
   .faq-heading {
     color: white;
     text-align: center;
-    font-size: 3rem;
   }
   
   .faq-container {
@@ -517,6 +558,34 @@ h1, h2, h3, p {
 
 
 
+
+  
+#sponsors {
+  padding: 20px; /* Adjust as needed */
+  text-align: center; /* Center text within the section */
+}
+
+/* Style for the sponsor section title */
+.center-title {
+  margin-bottom: 20px; /* Add space below the title */
+}
+
+/* Style for the sponsor logos section */
+.sponsor-logos {
+  display: flex;
+  justify-content: center; /* Center logos horizontally */
+  align-items: center;
+}
+
+/* Style for individual sponsor logos */
+.sponsor-logos img {
+  max-width: 300px; /* Adjust as needed */
+  max-height: 300px; /* Adjust as needed */
+  margin: 0 15px; /* Adjust as needed */
+}
+
+
+
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {    /* Hide links */
     .navbar a {
@@ -565,7 +634,7 @@ h1, h2, h3, p {
   .card-content > h1 {
     font-size: 1rem;
   }
-  .about-section,.faq-heading h1 {
+    h1 {
     font-size: 3rem;
   }
   .about-text,
@@ -585,16 +654,17 @@ h1, h2, h3, p {
   .hr-line {
     width: 100%; /* Adjust the width for horizontal lines on smaller screens */
   }
+
+  .sponsor-logos {
+    flex-direction: column; /* Stack logos vertically on small screens */
+    align-items: center;
+
+}
+
+.sponsor-logos img {
+    margin: 12px 0; /* Adjust spacing between logos */
+}
   
-  }
-  .faq-container {
-    margin-bottom: 40px;
-  }
-  
-  /* Adjust the font size for both headings to prevent overlap */
-  .about-section h1,
-  .faq-heading {
-    font-size: 2rem;
   }
   
   /* Media Query for Even Smaller Screens (e.g., mobile phones) */
@@ -625,15 +695,9 @@ h1, h2, h3, p {
     .faq-page {
       width: 100%; /* Adjust the width for FAQ pages on smaller screens */
     }
-    .about-section h1,
-    .faq-heading {
+    h1{
       font-size: 1.2rem; /* Adjust the font size for smaller screens */
     }
-  
-    .faq-container {
-      margin-bottom: 20px; /* Adjust the margin for the FAQ container */
-    }
-  
     .faq-page {
       font-size: 18px; /* Adjust the font size for FAQ pages on smaller screens */
       width: 90%; /* Adjust the width for FAQ pages on smaller screens */
@@ -649,10 +713,16 @@ h1, h2, h3, p {
     .container {
       max-width: 100%; /* Adjust the max-width for the container */
     }
+    .glitch-wrapper h2 {
+      font-size: 1rem !important;
+    }
   
   }
   
   @media (max-width: 320px) {
+    .glitch-wrapper h2 {
+     font-size:0.9rem !important;
+    } 
     .hero h1 {
       font-size: 3rem;
       padding: 0.5rem 5rem;
@@ -661,52 +731,9 @@ h1, h2, h3, p {
     .centered-image {
       max-width: 150px;
     }
-    .hackathon-text{
+    .hackathon-text {
         font-size: .85rem;
         bottom: 120px;
     }
   }
   
-  h2::before {
-    content: none;
- }
- h2 {
-  position: absolute;
-  top: 53%; /* Adjust the distance from glitched text as needed */
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  text-align: center;
-  font-size: 2rem;
-  white-space: nowrap;
-}
- ul#countdown {
-  position: absolute;
-  top: 64%; /* Adjust the distance from glitched text as needed */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%; /* Adjust as needed */
-  margin: 0 auto;
-  padding: 15px 0 20px 0;
-  border: 1px solid #adafb2;
-  border-width: 1px 0;
-  overflow: hidden;
-  font-weight: bold;
-  list-style-type: none;
-  text-align: center;
-}
-
-ul#countdown li {
-  margin: 0 -3px 0 0;
-  padding: 0;
-  display: inline-block;
-  width: 15.5%; /* Adjust as needed */
-  font-size: 6vw;
-  text-align: center;
-}
-
-ul#countdown li .label {
-  color: #adafb2;
-  font-size: 1.5vw;
-  text-transform: uppercase;
-}
