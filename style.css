@@ -58,7 +58,7 @@ h1, h2, h3, p {
     align-items: center;
     width: 100%;
     height: 100%;
-    background: #87ff65;
+    background: #00FFFF;
     border-radius: 5px;
     border: 0;
     color: #101916;
@@ -186,7 +186,7 @@ h1, h2, h3, p {
     color: #000;
     font-family: 'nt_yakitwo';
     transform: translateY(4%);
-    text-shadow: 1px -1px 0 #87ff65, 1px -1px 0 #87ff65, -1px 1px 0 #87ff65, 1px 1px 0 #87ff65, 2px -2px 0 #87ff65, 2px -2px 0 #87ff65, -2px 2px 0 #87ff65, 2px 2px 0 #87ff65;
+    text-shadow: 1px -1px 0 #00FFFF, 1px -1px 0 #00FFFF, -1px 1px 0 #00FFFF, 1px 1px 0 #00FFFF, 2px -2px 0 #00FFFF, 2px -2px 0 #00FFFF, -2px 2px 0 #00FFFF, 2px 2px 0 #00FFFF;
   }
   
   .glitch:before,
