@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #000000;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    text-align: center;
+  }
+  
+  .column {
+    width: 100%;
+    padding: 0.5em 0;
+  }
+  
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+  }
+  
+  .team-member {
+    box-shadow: 0 0 1.5em rgba(25, 0, 58, 0.1);
+    padding: 1.5em 0.8em;
+    border-radius: 0.3em;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #242424;
+  }
+  
+  .team-member .img-container {
+    width: 3em;
+    height: 3em;
+    background-color: #a993ff;
+    padding: 0.3em;
+    border-radius: 50%;
+    margin: 0 auto 1em auto;
+    position: relative;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .team-member h3 {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 0.5em; /* Adjusted margin to separate name and icons */
+  }
+  
+  .icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -1em; /* Adjusted position to move icons below the image */
+  }
+  
+  .icons a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .icons img {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  
+  .team-member:hover {
+    background: linear-gradient(#6045ea, #8567f7);
+    color: #ffffff;
+  }
+  
+  .team-member:hover .img-container {
+    transform: scale(1.1);
+  }
+  
+  @media screen and (min-width: 576px) {
+    section {
+      padding: 1em;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .team-member {
+      padding: 1.8em 0.8em;
+    }
+    .column {
+      flex: 0 0 48%;
+      max-width: 48%;
+      padding: 0.5em;
+    }
+  
+    .row {
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .team-member {
+      padding: 2.2em 1em;
+    }
+    .column {
+      flex: 0 0 31%;
+      max-width: 31%;
+      padding: 0.5em;
+    }
+  }
+  
