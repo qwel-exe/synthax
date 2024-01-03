@@ -570,10 +570,9 @@ ul#countdown li .label {
 .center-title {
   margin-bottom: 20px; /* Add space below the title */
 }
-
-/* Style for the sponsor logos section */
 .sponsor-logos {
   display: flex;
+  flex-wrap: wrap; /* Allow logos to wrap to the next row */
   justify-content: center; /* Center logos horizontally */
   align-items: center;
 }
@@ -582,7 +581,9 @@ ul#countdown li .label {
 .sponsor-logos img {
   max-width: 300px; /* Adjust as needed */
   max-height: 300px; /* Adjust as needed */
-  margin: 0 15px; /* Adjust as needed */
+  margin: 0 15px 15px 15px; /* Adjust as needed, added bottom margin to create space between rows */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  flex: 1 0 30%; /* Distribute available space evenly, with a minimum width of 30% */
 }
 
 
