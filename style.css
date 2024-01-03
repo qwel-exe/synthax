@@ -592,12 +592,11 @@ ul#countdown li .label {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .map-container {
   flex: 1;
-  height: 300px; /* You can adjust the initial height as needed */
+  height: 350px; /* You can adjust the initial height as needed */
   max-width: 600px; /* You can adjust the maximum width as needed */
   margin: 10px;
 }
