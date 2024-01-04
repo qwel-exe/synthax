@@ -29,6 +29,11 @@
     font-size: 2em;
     color: #ffffff;
   }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
   
   .team-member {
     box-shadow: 0 0 1.5em rgba(25, 0, 58, 0.1);
@@ -41,8 +46,8 @@
   }
   
   .team-member .img-container {
-    width: 3em;
-    height: 3em;
+    width: 5em;
+    height: 5em;
     background-color: #a993ff;
     padding: 0.3em;
     border-radius: 50%;
