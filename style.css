@@ -618,6 +618,20 @@ ul#countdown li .label {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Style for sponsor category headings */
+.sponsor-category h2,
+.sponsor-category h3 {
+    text-align: center;
+    font-size: 1.2em; /* Adjust the heading size as needed */
+    margin-bottom: 10px;
+}
+
+/* Style for sponsor logos */
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* Media query for smaller screens */
