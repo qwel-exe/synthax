@@ -101,3 +101,14 @@ background: rgba(67, 242, 228, 0.85);
   margin-top: -30px;  
 flex-shrink: 0;
 }
+
+.prizes{
+  width: 500px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 36px 36px;
+  background: #000;
+  margin-top: 100px; 
+  margin-left: 15px;
+  flex-shrink: 0;
+}
