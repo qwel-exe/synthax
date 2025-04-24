@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synthax - About Us</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:
+          "Space Grotesk",
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+      }
+
+      body {
+        background-color: #000;
+        color: #fff;
+        line-height: 1.5;
+      }
+
+      .about-section {
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8rem 5rem;
+        background-color: #000;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1288px;
+      }
+
+      .section-header {
+        text-align: center;
+      }
+
+      .section-title {
+        font-size: 4.5rem;
+        font-weight: 500;
+        line-height: 1;
+        color: #fff;
+      }
+
+      .section-subtitle {
+        margin-top: 0.25rem;
+        font-size: 1.875rem;
+        color: #6ee7b7; /* emerald-300 */
+        line-height: 50px;
+      }
+
+      .section-description {
+        margin-top: 2.5rem;
+        margin-left: 0.75rem;
+        font-size: 2.25rem;
+        line-height: 50px;
+        color: #d4d4d8; /* zinc-300 */
+      }
+
+      .info-grid {
+        display: flex;
+        gap: 1.25rem;
+        width: 100%;
+        max-width: 1240px;
+        margin-top: 4rem;
+      }
+
+      .info-column {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .column-40 {
+        width: 40%;
+      }
+
+      .column-30 {
+        width: 30%;
+      }
+
+      .column-60 {
+        width: 60%;
+      }
+
+      .info-card {
+        background-color: rgba(
+          115,
+          115,
+          115,
+          0.2
+        ); /* neutral-500 with opacity */
+        border-radius: 36px;
+        height: 100%;
+      }
+
+      /* Event Days Card */
+      .event-days {
+        padding: 1rem 2rem;
+        width: 100%;
+      }
+
+      .event-days-content {
+        display: flex;
+        gap: 1.25rem;
+      }
+
+      .event-days-left {
+        width: 45%;
+      }
+
+      .event-days-circle {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3.5rem;
+        margin: 0 auto;
+        border-radius: 1.5rem;
+        background-color: rgba(94, 234, 212, 0.8); /* teal-300 with opacity */
+        height: 165px;
+        width: 165px;
+      }
+
+      .event-days-number {
+        align-self: center;
+        font-size: 6rem;
+        font-weight: 500;
+        color: #000;
+      }
+
+      .event-days-label {
+        padding: 0.25rem 1rem;
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        color: #fff;
+        background-color: #000;
+        line-height: 50px;
+        text-align: center;
+      }
+
+      .event-days-right {
+        width: 55%;
+        display: flex;
+        align-items: center;
+      }
+
+      .event-date {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #fff;
+        white-space: nowrap;
+      }
+
+      .event-date-days {
+        font-size: 3rem;
+        line-height: 1;
+      }
+
+      .event-date-month {
+        align-self: center;
+        margin-top: 1rem;
+        font-size: 4.5rem;
+        line-height: 1;
+      }
+
+      /* Workshops Card */
+      .workshops-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+        font-size: 3rem;
+        text-align: center;
+        color: #fff;
+        line-height: 50px;
+      }
+
+      /* Logo Container */
+      .logo-container {
+        width: 100%;
+        white-space: nowrap;
+      }
+
+      .logo-card {
+        display: flex;
+        gap: 0.125rem;
+        padding: 1rem 3.5rem;
+        font-size: 3rem;
+        border-radius: 1rem;
+        background-color: rgba(115, 115, 115, 0.2);
+      }
+
+      .logo-text {
+        flex-grow: 1;
+        color: #fff;
+      }
+
+      .logo-text-bordered {
+        flex-grow: 1;
+        flex-shrink: 1;
+        border: 2px solid #6ee7b7; /* teal-300 */
+        width: 84px;
+        text-align: center;
+      }
+
+      .code-card {
+        padding: 1.5rem 4rem;
+        margin-top: 1.25rem;
+        font-size: 3.75rem;
+        font-weight: 600;
+        line-height: 1;
+        color: #6ee7b7; /* teal-300 */
+        border-radius: 1rem;
+        background-color: rgba(115, 115, 115, 0.2);
+        text-align: center;
+      }
+
+      /* Stats Grid */
+      .stats-grid {
+        display: flex;
+        gap: 1.25rem;
+        width: 100%;
+      }
+
+      .stats-card {
+        width: 50%;
+        background-color: rgba(115, 115, 115, 0.2);
+        border-radius: 36px;
+      }
+
+      .hours-card {
+        padding: 2.5rem 1.25rem 1.25rem;
+        white-space: nowrap;
+      }
+
+      .hours-content {
+        display: flex;
+        gap: 0.875rem;
+        align-items: flex-start;
+      }
+
+      .hours-number {
+        flex-grow: 1;
+        margin-top: 0.875rem;
+        font-size: 6rem;
+        line-height: 1;
+        color: #fff;
+      }
+
+      .hours-label {
+        font-size: 2.25rem;
+        line-height: 1;
+        color: #d4d4d8; /* zinc-300 */
+      }
+
+      .hours-subtitle {
+        margin-top: 1.5rem;
+        font-size: 2.25rem;
+        line-height: 1;
+      }
+
+      .text-zinc {
+        color: rgba(217, 217, 217, 1);
+      }
+
+      .text-teal {
+        color: #6ee7b7; /* teal-300 */
+      }
+
+      .mentors-card {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1.5rem 1.5rem;
+        color: #fff;
+        white-space: nowrap;
+      }
+
+      .mentors-number {
+        font-size: 6rem;
+        line-height: 1;
+      }
+
+      .mentors-label {
+        align-self: center;
+        margin-top: 1.75rem;
+        font-size: 2.25rem;
+        line-height: 1;
+      }
+
+      /* Prizes Card */
+      .prizes-card {
+        padding: 5rem 0.75rem 0.625rem;
+        margin-top: 2rem;
+        white-space: nowrap;
+        background-color: rgba(115, 115, 115, 0.2);
+        border-radius: 36px;
+        text-align: center;
+      }
+
+      .prizes-symbol {
+        margin: 0 1.5rem 0 2.75rem;
+        font-weight: 300;
+        line-height: 1;
+        color: #6ee7b7; /* teal-300 */
+        font-size: 9.75rem;
+      }
+
+      .prizes-label {
+        padding: 0.375rem 4rem;
+        margin-top: 1.25rem;
+        font-size: 3rem;
+        line-height: 1;
+        color: #fff;
+        background-color: #000;
+        text-align: center;
+      }
+
+      /* Location Card */
+      .location-card {
+        display: flex;
+        flex-direction: column;
+        padding: 1.75rem 2.25rem;
+        width: 100%;
+        background-color: rgba(115, 115, 115, 0.2);
+        border-radius: 36px;
+      }
+
+      .location-title {
+        align-self: center;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 1;
+        color: #fff;
+      }
+
+      .location-content {
+        display: flex;
+        gap: 1.25rem;
+        margin-top: 1.5rem;
+      }
+
+      .location-image {
+        width: 67%;
+        height: 310px;
+        background-color: #a8a29e; /* stone-400 */
+        border-radius: 36px;
+      }
+
+      .location-address {
+        width: 33%;
+        align-self: center;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        color: #d4d4d8; /* zinc-300 */
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .about-section {
+          padding: 6rem 1.25rem;
+        }
+
+        .section-title {
+          font-size: 2.25rem;
+        }
+
+        .section-description {
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
+
+        .info-grid {
+          flex-direction: column;
+          margin-top: 2.5rem;
+        }
+
+        .info-column {
+          width: 100%;
+          margin-left: 0;
+        }
+
+        .event-days-number,
+        .event-date-month,
+        .mentors-number,
+        .hours-number {
+          font-size: 2.25rem;
+        }
+
+        .workshops-card,
+        .code-card,
+        .prizes-label,
+        .location-title {
+          font-size: 2.25rem;
+          line-height: 2.5rem;
+        }
+
+        .prizes-symbol {
+          font-size: 2.25rem;
+          margin: 0 0.625rem;
+        }
+
+        .event-days-content,
+        .stats-grid,
+        .location-content {
+          flex-direction: column;
+        }
+
+        .event-days-left,
+        .event-days-right,
+        .stats-card,
+        .location-image,
+        .location-address {
+          width: 100%;
+        }
+
+        .event-days-circle {
+          margin-top: 2.5rem;
+        }
+
+        .event-date {
+          margin-top: 2.5rem;
+        }
+
+        .workshops-card,
+        .logo-card,
+        .code-card,
+        .stats-card,
+        .prizes-card,
+        .location-card {
+          margin-top: 1.75rem;
+        }
+
+        .location-address {
+          margin-top: 2.5rem;
+        }
+
+        .logo-card {
+          padding: 1.25rem;
+        }
+
+        .code-card {
+          padding: 1.5rem 1.25rem;
+        }
+
+        .prizes-label {
+          padding: 0.375rem 1.25rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="about-section">
+      <div class="container">
+        <header class="section-header">
+          <h1 class="section-title">About Us</h1>
+          <p class="section-subtitle">All about the event</p>
+        </header>
+
+        <div class="section-description">
+          Synthax is a space where students explore, code, and build together.
+          It's
+          <br />a collaborative tech playground for all skill levels, from total
+          beginners to curious creators.
+        </div>
+
+        <div class="info-grid top-row">
+          <div class="info-column column-40">
+            <div class="info-card event-days">
+              <div class="event-days-content">
+                <div class="event-days-left">
+                  <div class="event-days-circle">
+                    <div class="event-days-number">02</div>
+                    <div class="event-days-label">Day Event</div>
+                  </div>
+                </div>
+                <div class="event-days-right">
+                  <div class="event-date">
+                    <div class="event-date-days">16th-17th</div>
+                    <div class="event-date-month">Nov</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-column column-30">
+            <div class="info-card workshops-card">Exclusive Workshops</div>
+          </div>
+
+          <div class="info-column column-30">
+            <div class="logo-container">
+              <div class="logo-card">
+                <div class="logo-text">SYNT</div>
+                <div class="logo-text-bordered">HAX</div>
+              </div>
+              <div class="code-card">CODE</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-grid bottom-row">
+          <div class="info-column column-40">
+            <div class="stats-grid">
+              <div class="stats-card hours-card">
+                <div class="hours-content">
+                  <div class="hours-number">16</div>
+                  <div class="hours-label">Hrs</div>
+                </div>
+                <div class="hours-subtitle">
+                  <span class="text-zinc">of </span>
+                  <span class="text-teal">Coding</span>
+                </div>
+              </div>
+
+              <div class="stats-card mentors-card">
+                <div class="mentors-number">50+</div>
+                <div class="mentors-label">Mentors</div>
+              </div>
+            </div>
+
+            <div class="prizes-card">
+              <div class="prizes-symbol">$$$$</div>
+              <div class="prizes-label">Prizes</div>
+            </div>
+          </div>
+
+          <div class="info-column column-60">
+            <div class="location-card">
+              <h2 class="location-title">Where It All Goes Down</h2>
+              <div class="location-content">
+                <div class="location-image"></div>
+                <div class="location-address">
+                  Carmelaram post, Sy no 56/1B Off Sarjapur Road Near Sarjapur
+                  kodathi silk farm
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
