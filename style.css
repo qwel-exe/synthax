@@ -228,3 +228,113 @@ h1, h2, h3, p {
   font-size: 2rem;
   white-space: nowrap;
 }
+.navbar {
+   max-width: 600px;
+   margin: 40px auto; 
+   padding: 8px 20px; 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 35px;
+   border: 1px solid #5D5D5D;
+   background: #000;
+   background-color: transparent;
+   height: 50px; 
+ }
+ 
+ .navbar nav {
+   display: flex;
+   gap: 30px;
+ }
+ 
+ .navbar nav a {
+   text-decoration: none;
+   color: white;
+   font-size: 18px;
+   font-weight: 400;
+   transition: color 0.3s;
+ }
+ 
+ .navbar nav a:hover {
+   color: #43F2E4;
+ }
+ 
+ .register {
+   background-color: #43F2E4;
+   color: black;
+   padding: 10px 18px;
+   font-size: 18px;
+   font-weight: 700;
+   font-family: 'Inter', sans-serif;
+   border-radius: 8px;
+   text-decoration: none;
+   transition: background-color 0.3s;
+ }
+ 
+ .register:hover {
+   background-color: #2cd4c7;
+ }
+ 
+ .logo {
+   height: 36px;
+ }
+
+ 
+.countdown {
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+   margin-top: 60px;
+   font-family: 'Inter', sans-serif;
+ }
+ 
+ .countdown div {
+   text-align: center;
+ }
+ 
+ .countdown span {
+   display: block;
+   font-size: 30px;
+   font-weight: bold;
+ }
+ 
+ .countdown p {
+   margin-top: 5px;
+   font-size: 14px;
+   letter-spacing: 1px;
+ }
+ 
+ .hero {
+   text-align: center;
+   margin-top: 250px;
+ }
+  
+
+
+ .tagline {
+   font-family: 'Space Grotesk', sans-serif;
+   font-size: 45px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 50px; /* 111.111% */
+ }
+ 
+ .countdown {
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+   margin-top: 60px;
+   font-family: 'Inter', sans-serif;
+ }
+ 
+ .countdown div {
+   text-align: center;
+ }
+ 
+ .countdown span {
+   display: block;
+   font-size: 30px;
+   font-weight: bold;
+   color: #43F2E4;
+ }
+ 
