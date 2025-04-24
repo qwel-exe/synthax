@@ -1,89 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SYNTHAX</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script defer src="script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter&family=Space+Grotesk&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="navbar">
-    <img src="image/logo.png" alt="Logo" class="logo" />
-    <nav>
-      <a href="#">About</a>
-      <a href="#">Sponsors</a>
-      <a href="#">FAQs</a>
-    </nav>
-    <a href="#" class="register">Register</a>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synthax Hackathon</title>
+    <meta name="description" content="Join Synthax.Tech's inaugural hackathon in Bangalore, organized by students for students. Showcase your coding skills and creativity." />
+    <meta name="keywords" content="hackathon, student hackathon, coding event, Synthax.Tech, Bangalore, programming, technology, innovation" />
+    <meta name="author" content="Synthax.Tech Team" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Synthax.Tech Bangalore's First Student Hosted Hackathon" />
+    <meta property="og:description" content="Join Synthax.Tech's inaugural hackathon in Bangalore, organized by students for students. Showcase your coding skills and creativity." />
+    <meta property="og:url" content="https://www.synthax.tech" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:title" content="Synthax.Tech Bangalore's First Student Hosted Hackathon" />
+    <meta name="twitter:description" content="Join Synthax.Tech's inaugural hackathon in Bangalore, organized by students for students. Showcase your coding skills and creativity." />
+    <meta name="twitter:creator" content="@syntHaxHIS" />
+    <link rel="icon" href="favicon.ico" type="image/png" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="scroll-progress"></div>
+    <header class="navbar">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Sponsors</a>
+        <a href="#">FAQs</a>
+      </nav>
+      <a href="#" class="register">Register</a>
+    </header>
 
-  <main class="hero">
-    <div class="title-container">
-      <h1><span class="synth">SYN</span><span class="thax">THAX</span></h1>
-      <p class="tagline">Code. Create. Collaborate.</p>
-    </div>
-    <div class="countdown" id="countdown">
-      <div><span id="days">00</span><br />DAYS</div>
-      <div><span id="hours">00</span><br />HOURS</div>
-      <div><span id="minutes">00</span><br />MINS</div>
-      <div><span id="seconds">00</span><br />SECS</div>
-    </div>
-    <div class="desktop27-container">
-      <div class="desktop27-desktop27">
-        <span class="desktop27-text10">All about the event</span>
-        <span class="desktop27-text11">About Us</span>
-        <span class="desktop27-text12">
-          <span>Synthax is a space where students explore, code, and build together. It's</span><br>
-          <span>a collaborative tech playground for all skill levels, from total beginners to curious creators.</span>
-        </span>
-        
-        <!-- Images -->
-        <img src="images/rectangle8.png" alt="Rectangle" class="desktop27-rectangle9">
-        <img src="images/rectangle6.png" alt="Rectangle" class="desktop27-rectangle13">
-        <img src="images/rectangle7.png" alt="Rectangle" class="desktop27-rectangle12">
-        <img src="images/rectangle4.png" alt="Rectangle" class="desktop27-rectangle15">
-        <img src="images/rectangle5.png" alt="Rectangle" class="desktop27-rectangle14">
-        <img src="images/rectangle3.png" alt="Rectangle" class="desktop27-rectangle16">
-        <img src="images/rectangle9.png" alt="Rectangle" class="desktop27-rectangle7">
-        <img src="images/imageidk.png" alt="Event" class="desktop27-image">
-        <img src="images/rectangle2.png" alt="Rectangle" class="desktop27-rectangle86">
-        <img src="images/rectangle_black2.png" alt="Rectangle" class="desktop27-rectangle87">
-        <img src="images/rectangle_black.png" alt="Rectangle" class="desktop27-rectangle89">
-        
-        <!-- Event details -->
-        <span class="desktop27-text16">02</span>
-        <span class="desktop27-text17">16th-17th</span>
-        <span class="desktop27-text18">Hrs</span>
-        <span class="desktop27-text19">
-          <span class="desktop27-text20">of </span><span>Coding</span>
-        </span>
-        <span class="desktop27-text22">Where It All Goes Down</span>
-        <span class="desktop27-text23">Day Event</span>
-        <span class="desktop27-text24">Nov</span>
-        <span class="desktop27-text25">16</span>
-        <span class="desktop27-text26">CODE</span>
-        <span class="desktop27-text27">50+</span>
-        <span class="desktop27-text28">Mentors</span>
-        <span class="desktop27-text29">Exclusive&nbsp;</span>
-        <span class="desktop27-text30">Workshops</span>
-        <span class="desktop27-text31">$$$$</span>
-        <span class="desktop27-text32">Prizes</span>
-        
-        <!-- Groups -->
-        <div class="desktop27-group69">
-          <img src="images/rectangle1.png" alt="Location" class="desktop27-rectangle88">
-          <span class="desktop27-text33">
-            Carmelaram post, Sy no 56/1B Off Sarjapur Road Near Sarjapur kodathi silk farm
-          </span>
-        </div>
-        
-        <div class="desktop27-group70">
-          <span class="desktop27-text34">SYNTHAX</span>
-        </div>
+    <main class="hero">
+      <div class="glitch-wrapper">
+        <h1 class="glitch" data-text="Synt-hax">synt-hax</h1>
       </div>
-    </div>
-  </main>
-</body>
+      <p class="tagline">Code. Create. Collaborate.</p>
+
+      <div class="countdown" id="countdown">
+        <div><span id="days">00</span><br />DAYS</div>
+        <div><span id="hours">00</span><br />HOURS</div>
+        <div><span id="minutes">00</span><br />MINS</div>
+        <div><span id="seconds">00</span><br />SECS</div>
+      </div>
+
+      <div style="height: 150px;"></div>
+    </main>
+      
+      <section class="epic-section" style="font-family: 'Space Grotesk', sans-serif;">
+        <div class="epic-left">
+          <h1 class="epic-heading">BUILD<br />SOMETHING<br />EPIC.</h1>
+          <a class="epic-button" href="#">I’m In. Let’s Hack!</a>
+        </div>
+        <div class="epic-right">
+          <div class="epic-feature">
+            <div class="epic-number">1</div>
+            <div class="epic-text">
+              <strong>Build Real Projects</strong><br />
+              No exams, no marks — just pure creation and creativity.
+            </div>
+          </div>
+          <div class="epic-feature">
+            <div class="epic-number">2</div>
+            <div class="epic-text">
+              <strong>Meet Your People</strong><br />
+              Coders, designers, dreamers — all under one roof.
+            </div>
+          </div>
+          <div class="epic-feature">
+            <div class="epic-number">3</div>
+            <div class="epic-text">
+              <strong>Learn by Doing</strong><br />
+              Workshops, mentorship, and tech that actually excites you.
+            </div>
+          </div>
+          <div class="epic-feature">
+            <div class="epic-number">4</div>
+            <div class="epic-text">
+              <strong>Show Off Your Skills</strong><br />
+              Bring the heat, win cool prizes, and flex your brainpower.
+            </div>
+          </div>
+        </div>
+      </section>
+    <div class="sponsors">
+      <h1>Sponsors</h1>
+      <h2>The brands behind the build</h2>
+      <section class="sponsors-extended">
+        <div class="sponsor-group">
+          <div class="sponsor-card">
+            <h3>Title Sponsors</h3>
+            <div class="sponsor-logos">
+              <div class="logo-placeholder"></div>
+              <div class="logo-placeholder"></div>
+            </div>
+          </div>
+          <p class="sponsor-text-right">
+            The <span class="highlighted">driving force</span><br />behind Synthax
+          </p>
+        </div>
+      
+        <div class="sponsor-group lower">
+          <p class="sponsor-text-left">
+            Our partners in<br /><span class="highlighted">excellence</span>
+          </p>
+          <div class="sponsor-card">
+            <h3>Platinum Sponsors</h3>
+            <div class="sponsor-logos">
+              <div class="logo-placeholder"></div>
+              <div class="logo-placeholder"></div>
+              <div class="logo-placeholder"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sponsors-tiered">
+        <div class="tier-group">
+          <div class="tier-card">
+            <h3>Gold Sponsors</h3>
+            <div class="tier-logos">
+              <div class="logo-placeholder"></div>
+              <div class="logo-placeholder"></div>
+              <div class="logo-placeholder"></div>
+            </div>
+          </div>
+          <p class="tier-tagline">
+            Fuelling creativity<br />
+            with <span class="highlighted">purpose</span>
+          </p>
+        </div>
+      
+        <div class="tier-card">
+          <h3>Silver Sponsors</h3>
+          <div class="tier-logos">
+            <div class="logo-placeholder"></div>
+            <div class="logo-placeholder"></div>
+            <div class="logo-placeholder"></div>
+            <div class="logo-placeholder"></div>
+          </div>
+        </div>
+      
+        <div class="tier-card">
+          <h3>Bronze Sponsors</h3>
+          <div class="tier-logos">
+            <div class="logo-placeholder"></div>
+            <div class="logo-placeholder"></div>
+            <div class="logo-placeholder"></div>
+            <div class="logo-placeholder"></div>
+            <div class="logo-placeholder"></div>
+          </div>
+        </div>
+      </section>
+      <section class="hall-of-fame">
+        <h1 class="hof-title">Hall of Fame</h1>
+        <h2 class="hof-subtitle">Key speakers of the event</h2>
+        <div class="hof-cards">
+          <div class="hof-card">
+            <div class="hof-photo"></div>
+            <p class="hof-bio">This is the bio of the mentor</p>
+          </div>
+          <div class="hof-card">
+            <div class="hof-photo"></div>
+            <p class="hof-bio">This is the bio of the mentor</p>
+          </div>
+          <div class="hof-card">
+            <div class="hof-photo"></div>
+            <p class="hof-bio">This is the bio of the mentor</p>
+          </div>
+        </div>
+      </section>
+      <section class="faq-section">
+        <div class="faq-wrapper">
+          <h1 class="faq-title">Frequently Asked Questions</h1>
+          <p class="faq-subtitle">
+            If you can’t find the answer you are looking for,
+            <span class="highlighted"> feel free to contact us anytime!</span>
+          </p>
+      
+          <div class="faq-grid-row">
+            <div class="faq-row">
+              <div class="faq-box">
+                <h3>Why Synthax?</h3>
+                <p>If you can’t find the answer, feel free to contact us anytime!</p>
+              </div>
+              <div class="faq-box">
+                <h3>Why Synthax?</h3>
+                <p>If you can’t find the answer, feel free to contact us anytime!</p>
+              </div>
+            </div>
+      
+            <div class="faq-row offset">
+              <div class="faq-box">
+                <h3>Why Synthax?</h3>
+                <p>If you can’t find the answer, feel free to contact us anytime!</p>
+              </div>
+              <div class="faq-box">
+                <h3>Why Synthax?</h3>
+                <p>If you can’t find the answer, feel free to contact us anytime!</p>
+              </div>
+            </div>
+      
+            <div class="faq-row">
+              <div class="faq-box">
+                <h3>Why Synthax?</h3>
+                <p>If you can’t find the answer, feel free to contact us anytime!</p>
+              </div>
+              <div class="faq-box">
+                <h3>Why Synthax?</h3>
+                <p>If you can’t find the answer, feel free to contact us anytime!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer-section">
+        <div class="footer-top">
+          <div class="footer-top-inner">
+            <div class="footer-deco">
+              <span></span>
+              <span class="star">✦</span>
+              <span></span>
+              <span class="star">✦</span>
+              <span></span>
+            </div>
+            <h2 class="footer-title">Join the<br />Revolution</h2>
+            <div class="footer-buttons">
+              <button class="primary-btn">I’m in. Let’s Hack</button>
+              <button class="outline-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <a href="#" class="footer-link">Socials</a>
+          <a href="#" class="footer-link right">PRIVACY AND POLICY</a>
+        </div>
+      </footer>
+      
+  </body>
 </html>
