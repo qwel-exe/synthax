@@ -337,93 +337,118 @@ h1, h2, h3, p {
    font-weight: bold;
    color: #43F2E4;
  }
- .container {
-   max-width: 900px;
-   margin: auto;
-   text-align: center;
- }
- h1 {
-   font-size: 2rem;
- }
- h2 {
-   color: #00e0d3;
-   font-size: 0.9rem;
-   font-weight: 400;
-   margin-top: -10px;
- }
- .description {
-   margin: 1rem auto 2rem;
-   max-width: 600px;
-   font-size: 1rem;
-   line-height: 1.5;
- }
- .grid {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 1rem;
+ .info-grid {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   justify-content: center;
+   align-items: center;
    margin-top: 2rem;
  }
- .box {
+ 
+ /* TOP ROW with cards */
+ .top-row {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   justify-content: center;
+   width: 100%;
+ }
+ 
+ /* Bottom two-column layout */
+ .bottom-wrap {
+   display: flex;
+   gap: 1rem;
+   width: 100%;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ 
+ .bottom-left {
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 476px;
+ }
+ 
+ .location-card {
    background-color: #1a1a1a;
-   padding: 1rem;
+   color: white;
+   padding: 1rem 1.5rem;
    border-radius: 0.5rem;
-   min-height: 100px;
+   width: 476px;
+   min-height: 288px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+ 
+ /* Ensure info-cards retain size */
+ .info-card {
+   display: flex;
+   align-items: center;
+   background-color: #1a1a1a;
+   color: white;
+   padding: 0.6rem 1rem;
+   border-radius: 0.5rem;
+   transition: transform 0.2s ease, background 0.3s ease;
+   min-width: 140px;
+   width: 476px;
+   height: 198px;
+ }
+ 
+ /* Mini cards shared */
+ .mini-card {
+   background-color: #1a1a1a;
+   padding: 1rem 1.5rem;
+   border-radius: 0.5rem;
+   font-size: 1.2rem;
+   font-weight: bold;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   position: relative;
+   height: 90px;
+   flex: 1 1 0;
+   min-width: 140px;
+   max-width: 160px;
+   text-align: center;
  }
- .nested-box {
-   background-color: #0d0d0d;
-   border: 1px solid #00e0d3;
-   padding: 0.5rem 1rem;
-   border-radius: 0.4rem;
- }
- .highlight {
+ 
+ .highlight-text {
    color: #00e0d3;
-   font-weight: bold;
  }
- .big-text {
-   font-size: 2rem;
-   font-weight: bold;
+ 
+ 
+ @media (max-width: 768px) {
+   .bottom-wrap {
+     flex-direction: column;
+     align-items: center;
+   }
+ 
+   .bottom-left {
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+ 
+   .location-card {
+     width: 100%;
+     min-height: auto;
+   }
+ 
+   .mini-card {
+     width: 45%;
+   }
+ 
+   .top-row {
+     flex-direction: column;
+     align-items: center;
+   }
  }
- .code-box {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 0.5rem;
- }
- .address-box {
-   grid-column: span 2;
- }
- .address {
-   margin-top: 0.5rem;
-   font-size: 0.9rem;
-   line-height: 1.4;
- }
- .dollar-wrapper {
-   position: relative;
-   width: 100%;
- }
- .dollar-text {
-   font-size: 2rem;
-   color: #00e0d3;
-   position: relative;
-   z-index: 1;
- }
- .prizes-label {
-   position: absolute;
-   bottom: 10px;
-   left: 50%;
-   transform: translateX(-50%);
-   background-color: #1a1a1a;
-   padding: 2px 8px;
-   border-radius: 0.3rem;
-   font-size: 0.9rem;
-   z-index: 2;
- }
- .subtext {
-   font-size: 0.8rem;
-   margin-top: -0.2rem;
- }
+ 
+ 
+ 
+ 
