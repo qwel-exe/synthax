@@ -84,6 +84,20 @@ background-size: calc(199px + 1em) calc(99px + 1em);
   grid-row-end: 7;
 }
 
-
-
-
+.event-date{
+width: 165px;
+height: 160px;
+border-radius: 20px;
+margin-top: 20px;  
+margin-left: 20px;
+background: rgba(67, 242, 228, 0.85);
+}
+.event-day{
+  border-radius: 0px 0px 20px 20px;
+  background: #000;
+  width: 165px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: -30px;  
+flex-shrink: 0;
+}
