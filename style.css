@@ -818,8 +818,12 @@ h2 {
     font-size: 1.3rem;
     font-weight: 400;
 }
+  .bento-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
 
-<<<<<<< HEAD
 .headline {
   text-align: center;
   font-size: 2.5rem;
@@ -870,8 +874,6 @@ h2 {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
 
-=======
->>>>>>> 62a341f01fb2aaf465da447cf1ab956d2dc97495
 
 .page-wrapper {
   display: flex;
@@ -881,10 +883,7 @@ h2 {
   margin-top: 2rem;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 62a341f01fb2aaf465da447cf1ab956d2dc97495
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(10, 90px);  /* reduced from 119px */
@@ -1010,19 +1009,12 @@ h2 {
 }
 
 .number {
-<<<<<<< HEAD
   font-size: 5.5rem;
   font-weight: 600;
   text-align: center;
   margin-top: -50px;
   color: rgb(0, 0, 0);
   font-family: "Space Grotesk", sans-serif;
-=======
-  font-size: 5rem;
-  font-weight: bolder;
-  text-align: center;
-  margin-top: -50px;
->>>>>>> 62a341f01fb2aaf465da447cf1ab956d2dc97495
 }
 
 .day {
@@ -1062,24 +1054,16 @@ h2 {
   text-align: center; /* Optionally center text inside workshops */
 }
 
-<<<<<<< HEAD
 .synt {
   text-align: center; /* Optionally center text inside the logo */
   color: #ffffff;
   font-size: 2.5rem;
 
-=======
-.logo1 {
-  text-align: center; /* Optionally center text inside the logo */
-  color: #ffffff;
-  font-size: 2.5rem;
->>>>>>> 62a341f01fb2aaf465da447cf1ab956d2dc97495
 }
 .code-block {
   text-align: center; /* Optionally center text inside the logo */
   color: #ffffff;
   font-size: 2.5rem;
-<<<<<<< HEAD
   
 }
 .hax {
@@ -1099,34 +1083,13 @@ h2 {
   color: #ffffff;
   font-size: 5rem;
   font-family: "Space Grotesk", sans-serif;
-=======
-}
-.hax {
-  color: transparent; /* Make the text itself transparent */
-  -webkit-text-stroke: 1px cyan; /* Apply cyan stroke to the text */
-  font-weight: bold; /* Optional: Set text to bold for better visibility */
-}
-.time {
-  position: absolute; /* Position it relative to .box5 */
-  top: 0; /* Align it to the top */
-  left: 0; /* Align it to the left */
-  margin-top: 0px; /* Optional: Adjust top spacing */
-  margin-left: 40px; /* Optional: Adjust left spacing */
-  color: #ffffff;
-  font-size: 6rem;
->>>>>>> 62a341f01fb2aaf465da447cf1ab956d2dc97495
 }
 .hrs {
   position: absolute; /* Position it relative to .box5 */
   top: 0; /* Align it to the top */
   right: 0; /* Align it to the right */
-<<<<<<< HEAD
   margin-top: 26px; /* Optional: Adjust top spacing */
   margin-right: 30px; /* Optional: Adjust right spacing */
-=======
-  margin-top: 40px; /* Optional: Adjust top spacing */
-  margin-right: 20px; /* Optional: Adjust right spacing */
->>>>>>> 62a341f01fb2aaf465da447cf1ab956d2dc97495
   color: #ffffff;
   font-size: 1.5rem;
 
@@ -1134,7 +1097,6 @@ h2 {
 
 .teal {
   position: absolute; /* Position it relative to .box5 */
-<<<<<<< HEAD
   bottom: -4px; /* Align it to the bottom */
   left: 60%; /* Align it horizontally to the center */
   transform: translateX(-50%); /* Offset by 50% of its own width to center it */
@@ -1153,32 +1115,15 @@ h2 {
   font-size: 2rem;
 }
 
-=======
-  bottom: 0; /* Align it to the bottom */
-  left: 48%; /* Align it horizontally to the center */
-  transform: translateX(-50%); /* Offset by 50% of its own width to center it */
-  margin-bottom: 10px; /* Optional: Adjust bottom spacing */
-  color: #ffffff;
-  font-size: 2rem;
-
-}
->>>>>>> 62a341f01fb2aaf465da447cf1ab956d2dc97495
 
 .big-text {
   color: #ffffff;
   position: absolute; /* Allow it to be positioned relative to .box6 */
-<<<<<<< HEAD
   top: 37%; /* Position it vertically at 50% */
   left: 50%; /* Position it horizontally at 50% */
   transform: translate(-50%, -50%); /* Adjust the position to perfectly center */
   font-size: 5rem;
   font-family: "Space Grotesk", sans-serif;
-=======
-  top: 35%; /* Position it vertically at 50% */
-  left: 50%; /* Position it horizontally at 50% */
-  transform: translate(-50%, -50%); /* Adjust the position to perfectly center */
-  font-size: 6rem;
->>>>>>> 62a341f01fb2aaf465da447cf1ab956d2dc97495
 }
 
 .label {
@@ -1238,7 +1183,6 @@ h2 {
   color: #ffffff; /* Optional text color */
   text-align: right; /* Align the text to the right */
   text-align: left;
-<<<<<<< HEAD
 }
 
 .about-text{
@@ -1247,11 +1191,10 @@ font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 50px;
-
+text-align: left;
+width: 1000px;
 }
 
 .blue{
   color: #00FFFF;
-=======
->>>>>>> 62a341f01fb2aaf465da447cf1ab956d2dc97495
 }
