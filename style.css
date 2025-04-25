@@ -795,7 +795,7 @@
     text-align: right;
   }
 
-  .about {
+.about {
     max-width: 100%;
     padding: 50px 20px;
     margin: 0 auto;
@@ -803,21 +803,22 @@
     padding-top: 12rem;
   }
 
-  h1 {
+h1 {
     font-size: 4rem;
-  }
-  h2 {
+    margin-bottom: -5px;
+}
+h2 {
     color: #00e0d3;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
-  }
+}
   .bento-wrapper {
     width: 100%;
     overflow-x: auto;
     padding: 1rem 0;
-  }
+}
 
-  .bento-grid {
+.bento-grid {
     display: grid;
     grid-template-columns: repeat(10, 90px);  /* reduced from 119px */
     grid-template-rows: repeat(6, 75px);      /* reduced from 99px */
@@ -841,6 +842,7 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
+    
   }
   .box2{
     grid-column-start: 5;
@@ -890,3 +892,88 @@
     grid-row-start: 3;
     grid-row-end: 7;
   }
+.headline {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.timer-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 2rem; /* 👈 adjust this to push the timer below the headline */
+}
+
+  
+  #countdown {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 1;
+  }
+  
+  #countdown div {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(4px);
+  }
+  
+  .glass-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .coming-soon-text {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+.event-date{
+width: 165px;
+height: 110px;
+border-radius: 20px;
+margin-top: 20px;  
+margin-left: 20px;
+background: rgba(67, 242, 228, 0.85);
+}
+.event-day{
+  border-radius: 0px 0px 20px 20px;
+  background: #000;
+  width: 165px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: -30px;  
+  flex-shrink: 0;
+}
+
+.prizes{
+  border-radius: 0px 0px 20px 20px;
+  background: #000;
+  width: 365px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: -30px;  
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* controls the space between logo and timer */
+  margin-top: 2rem;
+}

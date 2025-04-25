@@ -37,27 +37,91 @@
         <h1 class="glitch" data-text="Synthax">synthax</h1>
       </div>
       <p class="tagline">Code. Create. Collaborate.</p>
-
-      <div class="countdown" id="countdown">
-        <div><span id="days">00</span><br />DAYS</div>
-        <div><span id="hours">00</span><br />HOURS</div>
-        <div><span id="minutes">00</span><br />MINS</div>
-        <div><span id="seconds">00</span><br />SECS</div>
+      <div class="timer-wrapper">
+        <div class="glass-overlay">
+          <p class="coming-soon-text">Coming Soon</p>
+        </div>
+        <div id="countdown">
+          <div><span id="days">00</span> Days</div>
+          <div><span id="hours">00</span> Hours</div>
+          <div><span id="minutes">00</span> Minutes</div>
+          <div><span id="seconds">00</span> Seconds</div>
+        </div>
       </div>
       <div class="about">
         <h1>About Us</h1>
         <h2>All about the event</h2>
         <div class="bento-wrapper">
           <div class="bento-grid">
-            <div class="box box1">1</div>
-            <div class="box box2">2</div>
-            <div class="box box3">3A</div>
-            <div class="box box4">3B</div>
-            <div class="box box5">4A</div>
-            <div class="box box6">4B</div>
-            <div class="box box7">5</div>
-            <div class="box box8">7</div>
-          </div>
+            <div class="box box1" style="display: flex; justify-content: space-between; align-items: center;">
+              <!-- Original date box content -->
+              <div style="display: flex; flex-direction: column;">
+                <div class="event-date">
+                  <span class="number" style="font-size: 4rem; font-weight: bold; padding-left: 30px; padding-top: 20px;">02</span>
+                </div>
+                <div class="event-day">
+                  <span class="label" style="color: white; font-size: 1.2rem; padding-left: 30px;">Day Event</span>
+                </div>
+              </div>
+              
+              <!-- Added date text with specific formatting -->
+              <div style="color: white; font-size: 1.8rem; padding-right: 30px; text-align: right; line-height: 1.2;">
+                <div style="font-weight: bold;">16th-17th</div>
+                <div style="font-size: 1.5rem;">Nov</div>
+              </div>
+            </div>
+            
+            <div class="box box2" style="display: flex; align-items: center; justify-content: center;">
+              <div style="color: white; font-size: 1.5rem; font-weight: bold; text-align: center;">
+                Exclusive<br/>Workshops
+              </div>
+            </div>
+
+            <div class="box box3" style="display: flex; align-items: center; justify-content: center;">
+              <div style="color: white; font-size: 2rem; font-weight: bold;">
+                SYNT<span style="color: #43F2E4;">HAX</span>
+              </div>
+            </div>
+          
+            <div class="box box4" style="display: flex; align-items: center; justify-content: center;">
+              <div style="color: white; font-size: 2rem; font-weight: bold;">
+                CODE
+              </div>
+            </div>
+          
+            <div class="box box5" style="display: flex; flex-direction: column; justify-content: center; padding-left: 20px;">
+              <span style="font-size: 3rem; font-weight: bold; color: white;">16</span>
+              <span style="font-size: 1rem; color: white;">Hrs of <span style="color: #43F2E4;">Coding</span></span>
+            </div>
+          
+            <div class="box box6" style="display: flex; flex-direction: column; justify-content: center; padding-left: 20px;">
+              <span style="font-size: 3rem; font-weight: bold; color: white;">50+</span>
+              <span style="font-size: 1rem; color: white;">Mentors</span>
+            </div>
+          
+            <div class="box box7" style="position: relative; display: flex; flex-direction: column; justify-content: space-between;">
+              <div style="font-size: 3rem; text-align: center; padding-top: 30px;">💲💲💲</div>
+              <div class="prizes">
+                <span class="label" style="color: white; font-size: 1.2rem; padding-left: 30px;">Prizes</span>
+              </div>
+            </div>
+          
+            <div class="box box8" style="padding: 20px; position: relative;">
+              <div style="font-size: 1.5rem; font-weight: bold; color: white; margin-bottom: 15px;">
+                Where It All Goes Down
+              </div>
+              <div class="box box8" style="display: flex; padding: 0;">
+                <div style="width: 50%; background: white; border-radius: 36px 0 0 36px;"></div>
+                <div style="width: 60%; padding: 20px;">
+                  <div style="color: white; line-height: 1.5; padding-bottom: 140px;">
+                    Carmelaram post, Sy no 56/1B<br />
+                    Off Sarjapur Road<br />
+                    Near Sarjapur kodathi silk farm
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
         </div>
       <div style="height: 150px;"></div>
     </main>
@@ -101,7 +165,7 @@
     <div class="sponsors">
       <h1>Sponsors</h1>
       <h2>The brands behind the build</h2>
-      <section class="sponsors-extended">
+      <!-- <section class="sponsors-extended">
         <div class="sponsor-group">
           <div class="sponsor-card">
             <h3>Title Sponsors</h3>
@@ -183,7 +247,7 @@
             <p class="hof-bio">This is the bio of the mentor</p>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="faq-section">
         <div class="faq-wrapper">
           <h1 class="faq-title">Frequently Asked Questions</h1>
