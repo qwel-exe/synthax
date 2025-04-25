@@ -9,106 +9,284 @@ body {
   font-family: sans-serif;
 }
 
-
-.bento-grid{
+.bento-grid {
   display: grid;
-  grid-template-columns:repeat(10,119px);
-  grid-template-rows: repeat(6,99px);
-  background-image:
-  linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
-  linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
-background-size: calc(199px + 1em) calc(99px + 1em);
-  gap: 1.2em;
-  
+  grid-template-columns: repeat(10, 90px);  /* reduced from 119px */
+  grid-template-rows: repeat(6, 75px);      /* reduced from 99px */
+  gap: 1em;
+  margin: 0 auto;
+  width: fit-content;
+  max-width: 100%;
 }
-.box{
+
+.box {
   border-radius: 36px;
   border: 1px solid #000;
-  background: rgba(121, 121, 121, 0.17)
-  
+  background: rgba(121, 121, 121, 0.17); /* Added missing semicolon */
 }
 
-
-.box1{
+.box1 {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 3;
+  position: relative; 
+  
 }
-.box2{
+
+.box2 {
   grid-column-start: 5;
   grid-column-end: 8;
   grid-row-start: 1;
   grid-row-end: 3;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+
 }
-.box3{
+
+.box3 {
   grid-column-start: 8;
   grid-column-end: 11;
   grid-row-start: 1;
   grid-row-end: 2;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
-.box4{
+
+.box4 {
   grid-column-start: 8;
   grid-column-end: 11;
   grid-row-start: 2;
   grid-row-end: 3;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
-.box5{
+
+.box5 {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 5;
+  position: relative; /* Make box5 the positioning context */
 }
-.box6{
+
+.box6 {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 5;
+  position: relative; /* Set the box as a reference point */
+  height: 100%; /* Ensure it takes up the full height of its grid area */
+  display: flex; /* Optional, to help with flex behavior */
+  justify-content: center; /* Optional: Center content horizontally */
+  align-items: center; /* Optional: Center content vertically */
 }
-.box7{
+.box7 {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 5;
   grid-row-end: 7;
+  position: relative;
 }
-.box7{
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 5;
-  grid-row-end: 7;
-}
-.box8{
+
+.box8 {
   grid-column-start: 5;
   grid-column-end: 11;
   grid-row-start: 3;
   grid-row-end: 7;
+  display: flex; /* Enable Flexbox layout */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start; /* Align items at the top */
+  align-items: center; /* Center items horizontally */
+  position: relative; /* Allow absolute positioning of elements inside */
+  padding: 10px; /* Optional padding for better spacing */
+  box-sizing: border-box; /* Ensure padding is included in width/height */
 }
 
-.event-date{
-width: 165px;
-height: 160px;
-border-radius: 20px;
-margin-top: 20px;  
-margin-left: 20px;
-background: rgba(67, 242, 228, 0.85);
+.event-date {
+  width: 140px;
+  height: 135px;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  background: rgba(67, 242, 228, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
 }
-.event-day{
-  border-radius: 0px 0px 20px 20px;
+
+.event-day {
+  border-radius: 0px 0px 19px 19px;
   background: #000;
-  width: 165px;
+  width: 140px;
   height: 50px;
   margin-left: 20px;
-  margin-top: -30px;  
-flex-shrink: 0;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  flex-shrink: 0;
 }
 
-.prizes{
-  width: 500px;
-  height: 80px;
-  flex-shrink: 0;
-  border-radius: 0px 0px 36px 36px;
+.number {
+  font-size: 5rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.day {
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.date-bold {
+  font-weight: lighter;
+}
+
+.date-small {
+  font-size: 1.5rem;
+}
+.date-range {
+  color: #ffffff;
+  font-size: 2.5rem;
+  position: absolute; /* Position it relative to .box1 */
+  top: 20px; /* Align it to the top */
+  right: 0; /* Align it to the right */
+  margin-top: 10px; /* Optional: Adjust top spacing */
+  margin-right: 35px; /* Optional: Adjust right spacing */
+}
+.month {
+  color: #ffffff;
+  font-size: 4rem;
+  position: absolute; /* Position it under .date-range */
+  top: 70px; /* Adjust this based on the height of .date-range */
+  right: 50px; /* Align it to the right of .box1 */
+  margin-right: 10px; /* Optional: Adjust right spacing */
+}
+
+.workshops {
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-align: center; /* Optionally center text inside workshops */
+}
+
+.logo {
+  text-align: center; /* Optionally center text inside the logo */
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+.code-block {
+  text-align: center; /* Optionally center text inside the logo */
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+.hax {
+  color: transparent; /* Make the text itself transparent */
+  -webkit-text-stroke: 1px cyan; /* Apply cyan stroke to the text */
+  font-weight: bold; /* Optional: Set text to bold for better visibility */
+}
+.sixteen {
+  position: absolute; /* Position it relative to .box5 */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  margin-top: 10px; /* Optional: Adjust top spacing */
+  margin-left: 15px; /* Optional: Adjust left spacing */
+  color: #ffffff;
+  font-size: 6rem;
+}
+.hrs {
+  position: absolute; /* Position it relative to .box5 */
+  top: 0; /* Align it to the top */
+  right: 0; /* Align it to the right */
+  margin-top: 40px; /* Optional: Adjust top spacing */
+  margin-right: 20px; /* Optional: Adjust right spacing */
+  color: #ffffff;
+  font-size: 1.5rem;
+
+}
+
+.teal {
+  position: absolute; /* Position it relative to .box5 */
+  bottom: 0; /* Align it to the bottom */
+  left: 48%; /* Align it horizontally to the center */
+  transform: translateX(-50%); /* Offset by 50% of its own width to center it */
+  margin-bottom: 10px; /* Optional: Adjust bottom spacing */
+  color: #ffffff;
+  font-size: 2rem;
+
+}
+
+.big-text {
+  color: #ffffff;
+  position: absolute; /* Allow it to be positioned relative to .box6 */
+  top: 35%; /* Position it vertically at 50% */
+  left: 50%; /* Position it horizontally at 50% */
+  transform: translate(-50%, -50%); /* Adjust the position to perfectly center */
+  font-size: 6rem;
+}
+
+.label {
+  color: #ffffff;
+  position: absolute; /* Position the label absolutely */
+  top: 65%; /* Position it slightly below the .big-text */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust horizontal position to truly center */
+  font-size: 2rem; /* Adjust font size for the label */
+}
+
+.prizes {
+  border-radius: 0px 0px 30px 30px;
   background: #000;
-  margin-top: 100px; 
-  margin-left: 15px;
+  width: 390px;
+  height: 70px;
+  position: absolute; /* Position the prizes element absolutely within .box7 */
+  bottom: 10px; /* Align to the bottom */
+  left: 50%; /* Center horizontally within .box7 */
+  transform: translateX(-50%); /* Adjust to perfectly center it horizontally */
   flex-shrink: 0;
+  color: #ffffff;
+  font-size: 2rem;
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Ensure text is centered */
+}
+
+.cash {
+
+  position: absolute; /* Position the cash element absolutely within .box7 */
+  top: 40%; /* Center it vertically */
+  left: 50%; /* Center it horizontally */
+  transform: translate(-50%, -50%); /* Adjust to truly center it */
+  font-size: 6rem; /* Adjust font size as needed */
+  color: rgba(67, 242, 228, 0.85);
+  text-align: center; /* Ensure text is centered */
+}
+
+
+.location-title {
+  position: absolute; /* Position the title absolutely within .box8 */
+  top: 10px; /* Distance from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust to perfectly center it horizontally */
+  font-size: 2rem; /* Adjust as needed */
+  color: #ffffff; /* Optional text color */
+  text-align: center; /* Ensure text is centered */
+}
+
+.location-address {
+  position: absolute; /* Position the address absolutely within .box8 */
+  right: 10px; /* Distance from the right edge */
+  bottom: 140px; /* Distance from the bottom */
+  font-size: 1.2rem; /* Adjust as needed */
+  color: #ffffff; /* Optional text color */
+  text-align: right; /* Align the text to the right */
+  text-align: left;
 }
