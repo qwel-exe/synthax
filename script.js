@@ -45,3 +45,14 @@ const countdown = () => {
 };
 
 window.onload = countdown;
+
+const timestamp = Date.now(); // or use a hardcoded version like 'v4'
+
+const css = document.createElement("link");
+css.rel = "stylesheet";
+css.href = "style.css?v=" + timestamp;
+document.head.appendChild(css);
+
+const js = document.createElement("script");
+js.src = "script.js?v=" + timestamp;
+document.body.appendChild(js);
