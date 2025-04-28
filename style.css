@@ -785,3 +785,101 @@ ul#countdown li .label {
     }
   }
   
+@media (min-width: 769px) and (max-width: 1199px) {
+  .hero {
+    margin-top: 150px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .glitch {
+    font-size: 10vw;
+    top: 30%;
+  }
+
+  .tagline {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 20px;
+  }
+
+  .timer-wrapper {
+    margin-top: 40px;
+  }
+
+  .about {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+  }
+
+  .about-text {
+    width: 90%;
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0 auto 2rem;
+    text-align: center;
+  }
+
+  .bento-grid {
+    gap: 1rem;
+    grid-template-columns: repeat(10, minmax(0, 70px));
+    grid-template-rows: repeat(6, minmax(0, 65px));
+    padding: 0;
+  }
+
+  .box {
+    border-radius: 30px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1218px) {
+	.event-date{
+		width: 100px;
+		height: 115px;
+	}
+	.event-day{
+		width: 100px;
+	}
+	.number{
+		font-size: 5rem;
+	}
+	.day{
+		font-size: 1.3rem;
+	}
+	.date-range{
+		font-size: 1.9rem;
+		right: -25px;
+	}
+	.month{
+		top: 60px;
+		right: 15px;
+		font-size: 3rem;
+	}
+	.workshops{
+		font-size: 3rem;
+	}
+	.synt,.hax,.code-block{
+		font-size: 2rem;
+	}
+	.sixteen{
+	margin-top: 10px;
+    margin-left: 20px;
+    font-size: 4rem;
+	}
+	.hrs{
+		margin-top: 26px;
+		margin-right: 5px;
+		font-size: 1rem;
+	}
+	.teal,.of{
+		font-size: 1.3rem;
+		bottom: 5px;
+	}
+	.label{
+		font-size: 1.3rem;
+	}
+	.big-text{
+		font-size: 4rem;
+	}
+
+}
