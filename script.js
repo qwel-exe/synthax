@@ -56,3 +56,20 @@ document.head.appendChild(css);
 const js = document.createElement("script");
 js.src = "script.js?v=" + timestamp;
 document.body.appendChild(js);
+
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const faqBoxes = document.querySelectorAll('.faq-box');
+
+  faqBoxes.forEach(box => {
+    box.addEventListener('click', () => {
+      box.classList.toggle('active');
+    });
+  });
+});
