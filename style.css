@@ -1390,7 +1390,7 @@ h2 {
 
 	.glitch-wrapper {
 		position: relative;
-		height: 200px;
+		height: 300px;
 		width: 100%;
 	}
 
@@ -1408,13 +1408,13 @@ h2 {
 		margin-top: 20px;
 		line-height: 32px;
 		position: relative;
-		top: 0;
+		top: 48%;
 		transform: none;
 		margin-top: -100px;
 	}
 
 	.timer-wrapper {
-		margin-top: 50px;
+		margin-top: -70px;
 		width: 100%;
 		padding: 0 10px;
 	}
@@ -1768,19 +1768,20 @@ h2 {
   }
 
   .glitch {
-    font-size: 10vw;
-    top: 30%;
+    font-size: 8vw; /* smaller font to avoid overlap */
+    top: 32%; /* slight tweak in vertical alignment */
   }
 
   .tagline {
     font-size: 24px;
     line-height: 36px;
-    margin-top: 20px;
+    margin-top: 40px; /* better breathing room */
   }
 
   .timer-wrapper {
-    margin-top: 40px;
+    margin-top: 60px; /* optional: spacing after tagline */
   }
+}
 
   .about {
     padding-top: 8rem;
@@ -1806,7 +1807,6 @@ h2 {
   .box {
     border-radius: 30px;
   }
-}
 @media (min-width: 769px) and (max-width: 1218px) {
 	.event-date{
 		width: 100px;
@@ -1861,5 +1861,25 @@ h2 {
 	}
 
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	.glitch {
+	  font-size: 8vw;
+	  top: 30%;
+	  transform: translate(-50%, -50%);
+	}
   
+	.tagline {
+		position: absolute;
+		top: 34%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 24px;
+		line-height: 36px;
+		text-align: center;
+	  }
   
+	.timer-wrapper {
+	  margin-top: 150px; /* space below the tagline */
+	}
+  }
