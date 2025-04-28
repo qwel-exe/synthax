@@ -1807,3 +1807,56 @@ h2 {
     border-radius: 30px;
   }
 }
+@media (min-width: 769px) and (max-width: 1218px) {
+	.event-date{
+		width: 100px;
+		height: 115px;
+	}
+	.event-day{
+		width: 100px;
+	}
+	.number{
+		font-size: 5rem;
+	}
+	.day{
+		font-size: 1.3rem;
+	}
+	.date-range{
+		font-size: 1.9rem;
+		right: -25px;
+	}
+	.month{
+		top: 60px;
+		right: 15px;
+		font-size: 3rem;
+	}
+	.workshops{
+		font-size: 3rem;
+	}
+	.synt,.hax,.code-block{
+		font-size: 2rem;
+	}
+	.sixteen{
+	margin-top: 10px;
+    margin-left: 20px;
+    font-size: 4rem;
+	}
+	.hrs{
+		margin-top: 26px;
+		margin-right: 5px;
+		font-size: 1rem;
+	}
+	.teal,.of{
+		font-size: 1.3rem;
+		bottom: 5px;
+	}
+	.label{
+		font-size: 1.3rem;
+	}
+	.big-text{
+		font-size: 4rem;
+	}
+
+}
+  
+  
