@@ -1831,7 +1831,7 @@ h2 {
 		font-size: 3rem;
 	}
 	.workshops{
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 	.synt,.hax,.code-block{
 		font-size: 2rem;
@@ -1855,6 +1855,9 @@ h2 {
 	}
 	.big-text{
 		font-size: 4rem;
+	}
+	.cash{
+		font-size: 5rem;
 	}
 
 }
