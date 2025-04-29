@@ -72,6 +72,21 @@ h1, h2, h3 {
 	left: 2px;
 	animation: noise-after 3s infinite linear alternate-reverse;
 }
+.tagline {
+	font-size: 4vw;
+	text-align: center;
+	margin: 0;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	color: #fff;
+	word-wrap: nowrap;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	white-space: nowrap;
+	z-index: 0;
+}
 
 p.subtext {
 	text-align: center;
@@ -166,60 +181,14 @@ h2::before {
 	height: 36px;
 }
 
-.countdown {
-	display: flex;
-	justify-content: center;
-	gap: 50px;
-	margin-top: 60px;
-	font-family: 'Inter', sans-serif;
-}
-
-.countdown div {
-	text-align: center;
-}
-
-.countdown span {
-	display: block;
-	font-size: 30px;
-	font-weight: bold;
-}
-
-.countdown p {
-	margin-top: 5px;
-	font-size: 14px;
-	letter-spacing: 1px;
-}
 
 .hero {
 	text-align: center;
 	margin-top: 250px;
+	height: 100px;
+
 }
 
-.tagline {
-	font-family: 'Space Grotesk', sans-serif;
-	font-size: 30px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 50px;
-	margin-top: -20px;
-	position: relative;
-	z-index: 100;
-}
-
-.countdown {
-	display: flex;
-	justify-content: center;
-	gap: 50px;
-	margin-top: 90px;
-	font-family: 'Inter', sans-serif;
-}
-
-.countdown span {
-	display: block;
-	font-size: 30px;
-	font-weight: bold;
-	color: #ffffff;
-}
 
 .epic-section {
 	display: flex;
@@ -264,10 +233,10 @@ h2::before {
 
 .epic-right {
 	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	gap: 4rem 8rem;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 4rem 2rem;
 	flex: 2;
-	min-width: 300px;
+	width: 100%;
 }
 
 .epic-feature {
@@ -711,20 +680,6 @@ h2 {
 	margin-top: 2rem;
 }
 
-#countdown {
-	display: flex;
-	gap: 1rem;
-	font-size: 1.5rem;
-	color: white;
-	z-index: 1;
-}
-
-#countdown div {
-	background: rgba(0,0,0,0.3);
-	padding: 0.5rem 1rem;
-	border-radius: 1rem;
-	backdrop-filter: blur(4px);
-}
 
 .glass-overlay {
 	position: absolute;
@@ -1380,108 +1335,6 @@ h2 {
 	}
 }
 
-@media (max-width: 768px) {
-	.hero {
-		margin-top: 100px;
-		text-align: center;
-		padding: 0 20px;
-		position: relative;
-	}
-
-	.glitch-wrapper {
-		position: relative;
-		height: 200px;
-		width: 100%;
-	}
-
-	.glitch {
-		font-size: 14vw;
-		top: 30%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		position: absolute;
-	}
-
-	.tagline {
-		font-size: 22px;
-		font-weight: 500;
-		margin-top: 20px;
-		line-height: 32px;
-		position: relative;
-		top: 0;
-		transform: none;
-		margin-top: -100px;
-	}
-
-	.timer-wrapper {
-		margin-top: 50px;
-		width: 100%;
-		padding: 0 10px;
-	}
-
-	#countdown {
-		display: flex;
-		gap: 15px;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		font-size: 1.4rem;
-		margin-top: 20px;
-	}
-
-	#countdown div {
-		background: rgba(0,0,0,0.3);
-		padding: 0.8rem 1.2rem;
-		border-radius: 12px;
-		font-size: 1.2rem;
-		min-width: 100px;
-		text-align: center;
-	}
-
-	.glass-overlay {
-		backdrop-filter: blur(10px);
-		border-radius: 20px;
-	}
-
-	.coming-soon-text {
-		font-size: 1.7rem;
-		text-align: center;
-		font-weight: bold;
-		color: white;
-	}
-}
-
-@media (min-width: 1200px) {
-	.hero {
-		margin-top: 300px;
-		padding: 0 50px;
-	}
-
-	.glitch {
-		font-size: 8vw;
-		top: 30%;
-	}
-
-	.tagline {
-		font-size: 36px;
-		line-height: 50px;
-		margin-top: 40px;
-	}
-
-	.timer-wrapper {
-		margin-top: 60px;
-	}
-
-	#countdown {
-		gap: 2rem;
-		font-size: 1.8rem;
-	}
-
-	#countdown div {
-		padding: 1rem 2rem;
-		border-radius: 16px;
-	}
-}
 
 @media (max-width: 768px) {
 	.about {
@@ -1554,49 +1407,61 @@ h2 {
 		padding: 20px 10px;
 	}
 
-	.event-date, .event-day, .date-range, .month {
-		position: static;
-		margin: 0;
-	}
 
 	.event-date {
 		background: rgba(67,242,228,0.85);
 		border-radius: 20px;
-		width: 100px;
-		height: 100px;
+        width: 200px;
+        height: 140px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 10px;
+		margin-right: auto;
 	}
 
-	.number {
-		font-size: 2.5rem;
-		margin: 0;
-	}
 
 	.event-day {
 		background: black;
 		color: white;
-		width: 100px;
-		height: 40px;
+        width: 200px;
+		height: 70px;
 		font-size: 1rem;
 		border-radius: 0 0 20px 20px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-right: auto;
 	}
 
 	.date-range {
-		color: white;
-		font-size: 1.2rem;
-		margin-top: 10px;
+        color: white;
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-right: 10px;
 	}
 
 	.month {
 		color: #43f2e4;
-		font-size: 2rem;
-		margin-top: 5px;
+        font-size: 3rem;
+        margin-top: 60px;
+        margin-right: -20px;
+	}
+	.box3{
+		display: none;
+	}
+	.sixteen{
+		margin-left: 110px;
+
+	}
+	.hrs{
+		margin-right: 80px;
+	}
+	.of{
+		left: 35%;
+	}
+	.teal{
+		left: 55%;
 	}
 }
 
@@ -1729,7 +1594,6 @@ h2 {
     border-radius: 20px;
     background: rgba(255,255,255,0.05);
     box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -1761,26 +1625,6 @@ h2 {
   }
 }
 @media (min-width: 769px) and (max-width: 1199px) {
-  .hero {
-    margin-top: 150px;
-    padding: 0 20px;
-    text-align: center;
-  }
-
-  .glitch {
-    font-size: 10vw;
-    top: 30%;
-  }
-
-  .tagline {
-    font-size: 24px;
-    line-height: 36px;
-    margin-top: 20px;
-  }
-
-  .timer-wrapper {
-    margin-top: 40px;
-  }
 
   .about {
     padding-top: 8rem;
@@ -1862,4 +1706,21 @@ h2 {
 
 }
   
-  
+
+
+@media (max-width: 600px) {
+	/* Your styles for screens <= 600px go here */
+	.tagline {
+	  top: 45%;
+	}
+}
+
+@media (max-width: 768) {
+.event-date{
+	margin-right: auto;
+
+}
+}
+
+
+
