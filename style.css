@@ -14,6 +14,8 @@ main {
 	flex: 1;
 }
 
+
+
 * {
 	box-sizing: border-box;
 }
@@ -21,6 +23,10 @@ main {
 h1, h2, h3 {
 	margin: 0;
 	font-family: "Space Grotesk", sans-serif;
+}
+
+.h{
+	display: none;
 }
 
 .glitch {
@@ -201,12 +207,6 @@ h2::before {
 	flex-wrap: wrap;
 	gap: 4rem;
 }
-
-.epic-left {
-	flex: 1;
-	min-width: 500px;
-}
-
 .epic-heading {
 	font-size: 70px;
 	line-height: 1.1;
@@ -1610,7 +1610,6 @@ h2 {
 
   .epic-section {
     padding: 3rem 1rem;
-    flex-direction: column;
     align-items: center;
     gap: 3rem;
   }
@@ -1725,9 +1724,90 @@ h2 {
 		font-size: 15vw;
 	}
 	}
+	
 @media (max-width: 570px) {
-	.tagline {
-		font-size: 5vw;
+	.epic-heading {
+		font-size: 50px;
 	}
+	.glitch-wrapper h2 {
+		font-size: 1.5rem;
+	}
+	}
+
+@media (max-width: 450px) {
+	.glitch-wrapper h2 {
+		font-size: 1rem;
+	}
+	.event-date , .event-day , .day{
+		display: none;
+	}	  
+	  
+
+		}
+
+
+@media (min-width: 300px) and (max-width: 446px) {
+    .date-range {
+        margin-top: 5%;
+        margin-right: 30%;
+    }
+	.month{
+        margin-top: 3%;
+        margin-right: 18%;
 	}
 	
+}
+
+@media (min-width: 580px) and (max-width: 766px) {
+    .date-range {
+        margin-top: 5%;
+        margin-right: 10%;
+		font-size: 3rem;
+    }
+	.month{
+        margin-top: 7%;
+        margin-right: 7%;
+		font-size: 4rem;
+	}
+
+	
+}
+
+@media (max-width: 766px) {
+.h{
+	display: block;
+}
+.g{
+	display: none;
+}
+}
+
+@media (max-width: 746px) {
+	.sixteen{
+		margin-left: 130px;
+	}
+	.teal {
+        left: 56%;
+    }
+	.of {
+        left: 38%;
+    }
+	.hrs {
+        margin-right: 90px;
+    }
+}
+
+@media (max-width: 300px) {
+	.sixteen{
+		margin-left: 45px;
+	}
+	.teal {
+        left: 56%;
+    }
+	.of {
+        left: 38%;
+    }
+	.hrs {
+        margin-right: 55px;
+    }
+}
